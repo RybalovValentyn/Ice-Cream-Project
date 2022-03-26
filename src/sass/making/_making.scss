@@ -1,0 +1,311 @@
+.making-section {
+  background-color: $section-bgc;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  @media screen and(max-width: $to-tablet) {
+    padding-top: 125px;
+    padding-bottom: 97px;
+
+    background-image: url(../images/making-img/mobile/milk-background@1x.png);
+
+    @media screen and (min-resolution: 2dppx) {
+      background-image: url(../images/making-img/mobile/milk-background@2x.png);
+    }
+  }
+
+  @media screen and(min-width: $tablet) {
+    padding-top: 130px;
+    padding-bottom: 242px;
+  }
+
+  @media screen and(min-width: $desctop) {
+    padding-top: 125px;
+    padding-bottom: 300px;
+
+    background-image: url(../images/making-img/desktop/milk-background@1x.png);
+
+    @media screen and (min-resolution: 2dppx) {
+      background-image: url(../images/making-img/desktop/milk-background@2x.png);
+    }
+  }
+}
+
+.making-section .section__title {
+  margin-bottom: 0;
+  margin-top: 15px;
+}
+
+.making-picture {
+  @media screen and (max-width: $to-tablet) {
+    margin-top: 26px;
+  }
+  @media screen and (min-width: $tablet) {
+    width: 340px;
+  }
+  @media screen and (min-width: $desctop) {
+    width: 516px;
+  }
+}
+
+.flex-container {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    margin-top: 50px;
+  }
+  @media screen and (min-width: $desctop) {
+    margin-top: 55px;
+    justify-content: center;
+  }
+}
+
+.making-describe {
+  @media screen and (max-width: $to-tablet) {
+    padding: 0 30px;
+    margin-top: 46px;
+  }
+  @media screen and (min-width: $tablet) {
+    margin-top: 50px;
+    margin-left: 17px;
+    width: 343px;
+  }
+  @media screen and (min-width: $desctop) {
+    width: 463px;
+    margin-top: 60px;
+    margin-left: 74px;
+  }
+}
+
+.making-describe p {
+  font-weight: 500;
+  font-style: normal;
+  text-align: left;
+
+  @media screen and (max-width: $to-tablet) {
+    font-size: 12px;
+    line-height: 1.58;
+  }
+
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 1.79;
+  }
+
+  @media screen and (max-width: $to-desctop) {
+    letter-spacing: normal;
+  }
+
+  @media screen and (min-width: $desctop) {
+    line-height: 1.93;
+  }
+}
+
+.br {
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.making-describe .making-begin {
+  color: #000000;
+  display: block;
+  @media screen and(min-width: $desctop) {
+    font-size: 16px;
+  }
+}
+
+.making-describe .making-middle {
+  margin-top: 30px;
+  color: $description-text;
+  @media screen and (min-width: $tablet) {
+    letter-spacing: inherit;
+  }
+  @media screen and(min-width: $desctop) {
+    margin-top: 35px;
+  }
+}
+
+.making-describe .making-result {
+  margin-top: 15px;
+  color: $description-text;
+  @media screen and(min-width: $desctop) {
+    margin-top: 30px;
+  }
+}
+
+.making-button {
+  @include page_button($accented-text, #fff, $light-btn-hover-bgc);
+
+  margin-top: 20px;
+
+  width: 176px;
+  height: 44px;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.29;
+
+  @media screen and (max-width: $to-tablet) {
+    margin-top: 20px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-top: 55px;
+  }
+
+  @media screen and(min-width: $desctop) {
+    margin-top: 40px;
+  }
+}
+
+.making-arrow {
+  stroke: $accented-text;
+  margin-left: 13px;
+}
+.making-statistical {
+  @media screen and (max-width: $to-tablet) {
+    margin-top: 39px;
+  }
+  @media screen and(min-width: $tablet) {
+    display: flex;
+    margin-top: 64px;
+  }
+  @media screen and(min-width: $desctop) {
+    margin-top: 39px;
+  }
+}
+
+.li-title,
+.li-description {
+  margin: 0;
+}
+
+.li-title {
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: $accented-text;
+
+  @media screen and (max-width: $to-tablet) {
+    font-size: 36px;
+    line-height: 1.14;
+  }
+
+  @media screen and (min-width: $tablet) {
+    font-size: 48px;
+    line-height: 1.15;
+  }
+
+  @media screen and(min-width: $desctop) {
+    font-size: 58px;
+    line-height: 1.14;
+  }
+}
+
+.making-volume .li-title::before {
+  content: "";
+  width: 33px;
+  height: 50px;
+  display: block;
+  background-image: url(../images/bucket-milk.svg);
+  background-size: contain;
+
+  @media screen and (max-width: $to-tablet) {
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 36px;
+  }
+
+  @media screen and(min-width: $desctop) {
+    margin-bottom: 40px;
+  }
+}
+
+.making-weight .li-title::before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  display: block;
+  background-image: url(../images/bucket-apple.svg);
+  background-size: contain;
+
+  @media screen and (max-width: $to-tablet) {
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 36px;
+  }
+
+  @media screen and(min-width: $desctop) {
+    margin-bottom: 40px;
+  }
+}
+
+.making-number .li-title::before {
+  content: "";
+  width: 44px;
+  height: 50px;
+  display: block;
+  background-image: url(../images/sweets.svg);
+  background-size: contain;
+
+  @media screen and (max-width: $to-tablet) {
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 36px;
+  }
+
+  @media screen and(min-width: $desctop) {
+    margin-bottom: 40px;
+  }
+}
+
+.li-description {
+  margin-top: 20px;
+  font-weight: 700;
+  color: #000000;
+
+  @media screen and (max-width: $to-tablet) {
+    font-size: 12px;
+    line-height: 1.67;
+    width: 230px;
+    letter-spacing: normal;
+  }
+
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 1.71;
+    width: 180px;
+    letter-spacing: normal;
+  }
+
+  @media screen and(min-width: $desctop) {
+    font-size: 16px;
+    line-height: 1.75;
+    width: 330px;
+    letter-spacing: 0.02em;
+  }
+}
+
+.making-statistical li + li {
+  @media screen and(max-width: $to-tablet) {
+    margin-top: 38px;
+  }
+
+  @media screen and(min-width: $tablet) {
+    margin-left: 60px;
+  }
+
+  @media screen and(min-width: $desctop) {
+    margin-left: 30px;
+  }
+}

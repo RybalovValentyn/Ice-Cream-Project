@@ -1,0 +1,152 @@
+.footer-bg {
+  background-color: $section-bgc;
+}
+.footer-bg .container {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+.footer-bg .box-inner {
+  margin-bottom: 43px;
+
+  @media screen and (min-width: $tablet) {
+    width: 300px;
+    display: inline-block;
+    margin-left: auto;
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: $desctop) {
+    width: 335px;
+  }
+}
+.footer-subtitle {
+  display: block;
+
+  margin-bottom: 16px;
+
+  font-size: 18px;
+
+  color: $dark-pink;
+  @media screen and (min-width: $tablet) {
+    font-size: 26px;
+  }
+  @media screen and (min-width: $desctop) {
+    font-size: 30px;
+  }
+}
+.footer-title {
+  max-width: 234px;
+
+  margin-top: 0;
+  margin-bottom: 43px;
+
+  font-family: Titan One;
+
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 1.14;
+
+  text-transform: uppercase;
+  color: $accented-text;
+
+  @media screen and (min-width: $tablet) {
+    max-width: 340px;
+    margin-bottom: 91px;
+
+    font-size: 48px;
+  }
+  @media screen and (min-width: $desctop) {
+    max-width: 474px;
+    margin-bottom: 97px;
+
+    font-size: 58px;
+  }
+}
+.footer-social {
+  display: flex;
+  justify-content: flex-end;
+
+  margin-bottom: 46px;
+}
+.footer-social .social-link:hover,
+.footer-social .social-link:focus {
+  background-color: $accented-text;
+}
+
+.footer-social .social-list:not(:last-child) {
+  margin-right: 28px;
+}
+.footer-social .social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 32px;
+  height: 32px;
+
+  border-radius: 50%;
+  background-color: $soc-media-icons-bgc;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-social .social-item {
+  fill: #ffffff;
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+.footer-address {
+  display: block;
+}
+.footer-contact {
+  display: block;
+
+  text-align: right;
+  font-style: normal;
+  font-size: 12px;
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: $desctop) {
+    font-size: 16px;
+  }
+}
+
+.footer-contact .contact-link {
+  font-weight: 700;
+  line-height: 1.83;
+
+  color: $accented-text;
+}
+.footer-copy {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 25px;
+  padding-top: 22px;
+  border-top: 1px solid #e1e1e1;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+
+  text-align: center;
+
+  color: $description-text;
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 18px;
+    padding-top: 29px;
+  }
+  @media screen and (min-width: $desctop) {
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+}
+.footer-copy .text {
+  display: inline-block;
+  width: 150px;
+  @media screen and (min-width: $tablet) {
+    width: 300px;
+  }
+}

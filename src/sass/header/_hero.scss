@@ -1,0 +1,39 @@
+.hero-container {
+  position: relative;
+  padding-top: 6px;
+  height: 502px;
+
+  @media screen and(min-width: $tablet) {
+    padding-top: 37px;
+    height: 399px;
+  }
+  @media screen and (min-width: $desctop) {
+    height: 665px;
+  }
+}
+.hero {
+  overflow: hidden;
+
+  width: 100%;
+  background-color: $hero-bgc;
+}
+
+.header-logo {
+  display: inline-flex;
+  align-items: center;
+
+  &__text {
+    font-family: Titan One;
+    color: $accented-text;
+    text-transform: uppercase;
+    font-size: 26px;
+    line-height: 1.15;
+    margin-left: 20px;
+  }
+
+  @media screen and(min-width: $desctop) {
+    position: absolute;
+    left: -70px;
+    top: 0;
+  }
+}

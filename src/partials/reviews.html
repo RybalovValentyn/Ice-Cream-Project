@@ -1,0 +1,89 @@
+<!--<p class="reviews">this is section with gallery and reviews</p>-->
+<section class="reviews">
+  <div class="container">
+    <h2 class="section__title visually-hidden">REVIEWS</h2>
+    <div class="reviews-gallery">
+      <picture>
+        <source
+          srcset="
+            ../images/reviews/gallery-mobile1.jpg 1x,
+            ../images/reviews/gallery-mobile2.jpg 2x
+          "
+          media="(max-width:767px)"
+        />
+        <source
+          srcset="
+            ../images/reviews/gallery-tablet1.jpg 1x,
+            ../images/reviews/gallery-tablet2.jpg 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ../images/reviews/gallery-desctop1.jpg 1x,
+            ../images/reviews/gallery-desctop2.jpg 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <img src="../images/reviews/gallery-mobile1.jpg" alt="Пример" />
+      </picture>
+    </div>
+    <!-- SLIDER JS -->
+    <div class="slider">
+      <div class="slider__item">
+        <img src="../images/reviews/anna.png" alt="girl" />
+        <div class="text-box">
+          <p class="text-slide">
+            Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
+            Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
+            ipsum primis in nibh vel risus.
+          </p>
+        </div>
+        <div class="points">
+          <span class="points-icon"></span>
+          <span class="points-icon"></span>
+          <span class="points-icon"></span>
+        </div>
+        <div class="slide-subtitle">
+          <p class="slide-subtitle-item">Emily, Los Angeles</p>
+        </div>
+      </div>
+      <div class="slider__item">
+        <img src="../images/reviews/marina.png" alt="girl" />
+        <div class="text-box">
+          <p class="text-slide">
+            Quisque cursus et, porttitor risus.Nullam viverra consectetuer.
+            Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
+            ipsum primis in nibh vel risus.
+          </p>
+        </div>
+        <div class="points">
+          <span class="points-icon"></span>
+          <span class="points-icon"></span>
+          <span class="points-icon"></span>
+        </div>
+        <div class="slide-subtitle">
+          <p class="slide-subtitle-item">Mari, Ukraine</p>
+        </div>
+      </div>
+      <div class="slider__item">
+        <img src="../images/reviews/liza.png" alt="girl" />
+        <div class="text-box">
+          <p class="text-slide">
+            Aliquam sem.Nullam viverra consectetuer. Quisque cursus et,
+            porttitor risus. In hendrerit nulla quam nunc, accumsan congue.
+            Lorem ipsum primis in nibh vel risus.
+          </p>
+        </div>
+        <div class="points">
+          <span class="points-icon"></span>
+          <span class="points-icon"></span>
+          <span class="points-icon"></span>
+        </div>
+        <div class="slide-subtitle">
+          <p class="slide-subtitle-item">Katrin, Russia</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

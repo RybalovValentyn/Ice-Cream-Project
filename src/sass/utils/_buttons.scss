@@ -1,0 +1,22 @@
+@mixin page_button($btn-textcolor, $btn-bgc, $btn-hover-bgc) {
+  border: none;
+  padding: 0;
+  border-radius: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 44px;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  background-color: $btn-bgc;
+  color: $btn-textcolor;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    background-color: $btn-hover-bgc;
+  }
+}
